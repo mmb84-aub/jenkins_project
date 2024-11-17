@@ -11,7 +11,9 @@ from app import greet
 
 class TestApp(unittest.TestCase):
     def test_greet(self):
-        self.assertEqual(greet("World"), "Hello, World from FirstName LastName!")
+        self.assertEqual(
+            greet("World from Mohamad Bailoun!"), "Hello, World from Mohamad Bailoun!"
+        )
 
 
 if __name__ == "__main__":
