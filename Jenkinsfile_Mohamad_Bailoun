@@ -41,10 +41,11 @@ pipeline {
         stage('Security Scan') {
             steps {
                 script {
-                    sh "source ${VIRTUAL_ENV}/bin/activate && bandit -r . -x venv"
+                    sh "source ${VIRTUAL_ENV}/bin/activate && bandit -r . -x ${env.WORKSPACE}/venv"
                 }
             }
         }
+
         stage('Deploy') {
             steps {
                 script {
