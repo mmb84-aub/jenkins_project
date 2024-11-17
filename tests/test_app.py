@@ -12,7 +12,7 @@ from app import greet
 class TestApp(unittest.TestCase):
     def test_greet(self):
         self.assertEqual(
-            greet("World from Mohamad Bailoun!"), "Hello, World from Mohamad Bailoun!"
+            greet("World from Mohamad Bailoun"), "Hello, World from Mohamad Bailoun!"
         )
 
 
