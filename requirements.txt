@@ -1,2 +1,5 @@
+coverage
+bandit
 flake8
 pytest
+
