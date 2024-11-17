@@ -41,7 +41,7 @@ pipeline {
         stage('Security Scan') {
             steps {
                 script {
-                    sh "source ${VIRTUAL_ENV}/bin/activate && bandit -r . -x ${env.WORKSPACE}/venv"
+                    sh "source ${VIRTUAL_ENV}/bin/activate && bandit -r . -x /var/lib/jenkins/workspace/Python-CI-CD/venv"
                 }
             }
         }
